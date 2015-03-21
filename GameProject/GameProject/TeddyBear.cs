@@ -133,6 +133,14 @@ namespace GameProject
         public void Update(GameTime gameTime)
         {
             // move the teddy bear
+            int x = drawRectangle.X;
+            int y = drawRectangle.Y;
+            x = x + (int)velocity.X;
+            y = y + (int)velocity.Y;
+            int a = drawRectangle.Width;
+            int b = drawRectangle.Height;
+
+            drawRectangle = new Rectangle(x, y, a, b);
 
             // bounce as necessary
             BounceTopBottom();

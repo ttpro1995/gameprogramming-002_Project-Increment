@@ -111,7 +111,7 @@ namespace GameProject
 
 
             // add initial game objects
-            burger = new Burger(Content, "burger", GraphicsDevice.Viewport.TitleSafeArea.X + GraphicsDevice.Viewport.TitleSafeArea.Width / 8, GraphicsDevice.Viewport.TitleSafeArea.Y + GraphicsDevice.Viewport.TitleSafeArea.Height / 2, null);
+            burger = new Burger(Content, "burger", GraphicsDevice.Viewport.TitleSafeArea.X + GraphicsDevice.Viewport.TitleSafeArea.Width / 2, GraphicsDevice.Viewport.TitleSafeArea.Y + GraphicsDevice.Viewport.TitleSafeArea.Height /8*7 , null);
             SpawnBear();
             // set initial health and score strings
         }
